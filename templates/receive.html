@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You send the info</title>
+</head>
+<body>
+    <h1>{{ field }} Information</h1>
+    <p>{{ field }}: {{ user_info.data[field] }}</p>
+
+    <form action="{{ url_for('user') }}" method="get">
+        <button type="submit">Go to User Page</button>
+    </form>
+</body>
+</html>

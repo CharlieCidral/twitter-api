@@ -1,0 +1,13 @@
+version: "3"
+services:
+  web:
+    # Build the Dockerfile in the current directory
+    build: .
+    # Expose port 5000 on the host machine
+    ports:
+      - "5000:5000"
+    # Set environment variables if needed
+    environment:
+      - CONSUMER_KEY=your_twitter_consumer_key
+      - CONSUMER_SECRET=your_twitter_consumer_secret
+      - MONGO_URI=your_mongo_db_uri

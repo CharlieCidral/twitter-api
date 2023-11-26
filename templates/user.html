@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User database</title>
+</head>
+<body>
+    <h1>Saved Document</h1>
+    {% for user_document in users_collection %}
+        <p>Name: {{ user_document['data']['name'] }}</p>
+        <p>Description: {{ user_document['data']['description'] }}</p>
+        <p>Location: {{ user_document['data']['location'] }}</p>
+        <p>_Id: {{ user_document['data']['id'] }}</p>
+        <!-- Add other fields as needed -->
+        <hr>
+    {% endfor %}
+</body>
+</html>

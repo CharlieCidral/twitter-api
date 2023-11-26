@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweets</title>
+</head>
+<body>
+  <p>Select user info that you want to return.</p>
+
+  <form action="{{ url_for('receive_info') }}" method="post">
+    <label for="infos">Choose a car:</label>
+    <select name="user_info" id="info">
+      <option value="created_at">created_at</option>
+      <option value="description">description</option>
+      <option value="entities">entities</option>
+      <option value="location">location</option>
+      <option value="name">name</option>
+      <option value="pinned_tweet_id">pinned_tweet_id</option>
+      <option value="profile_image_url">profile_image_url</option>
+      <option value="protected">protected</option>
+      <option value="public_metrics">public_metrics</option>
+      <option value="url">url</option>
+      <option value="username">username</option>
+      <option value="verified">verified</option>
+      <option value="withheld">withheld</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+    <!-- Display user information -->
+    
+
+</body>
+</html>
